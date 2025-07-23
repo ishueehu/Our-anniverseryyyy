@@ -1,0 +1,254 @@
+body {
+  background: url('vintage-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Georgia', serif;
+  color: #2d2d2d;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Password Screen Styles */
+#password-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 248, 220, 0.95); /* Slightly more opaque background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of everything */
+}
+
+.password-box {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.password-box h2 {
+  color: #8B0000;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.password-box input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #FF69B4;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.password-box input:focus {
+  border-color: #8B0000;
+}
+
+.password-box button {
+  padding: 12px 30px;
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.password-box button:hover {
+  background-color: #A52A2A;
+  transform: translateY(-2px);
+}
+
+
+#start-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 248, 220, 0.9);
+}
+
+#startBtn {
+  font-size: 22px;
+  padding: 15px 30px;
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.type-text {
+  white-space: pre-wrap;
+  display: block;
+  margin: 20px auto;
+  max-width: 95%;
+  min-height: 1.2em;
+}
+
+.outlined-text {
+  color: #FF69B4; /* Pink color */
+  -webkit-text-stroke: 1.5px black; /* For Webkit browsers */
+  text-stroke: 1.5px black; /* Standard */
+  font-weight: 900; /* Make it bold */
+}
+
+img.photo {
+  width: 90%;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000050;
+}
+
+.screenshots img {
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #444;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: darkred;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reveal-button {
+  display: block;
+  margin: 30px auto;
+  background-color: #8B0000;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.reveal-button:hover {
+  background-color: #A52A2A;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.floating {
+  position: absolute;
+  font-size: 22px;
+  animation: floatUp 5s linear infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+.ss-box {
+  margin: 20px auto;
+  width: 90%;
+  text-align: center;
+}
+
+.ss-box img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #333;
+}
+
+.ss-caption {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 14px;
+  color: #333;
+}
+
+#surprise {
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #FF69B4;
+  border-radius: 15px;
+  background-color: rgba(255, 248, 220, 0.7);
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+  animation: bounceIn 1s ease-out forwards;
+}
+
+#surprise:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(255, 105, 180, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.surprise-image {
+  max-width: 80%; /* Adjust as needed */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin: 20px auto; /* Add some spacing */
+  display: none; /* Keep hidden until revealed by JS */
+}
+
+/* Styling for the new final images section */
+.final-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    margin-top: 30px;
+}
+
+.final-img-box {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 280px; /* Fixed width for consistency */
+    display: none; /* Hidden by default, revealed by JS */
+    opacity: 0; /* For fade-in effect */
+    transition: opacity 1s ease-in-out;
+}
+
+.final-img-box img {
+    max-width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

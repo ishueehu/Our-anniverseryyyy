@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Anniversary ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div id="password-screen">
+    <div class="password-box">
+      <h2>Enter the Secret Date 🤫 pass wahi hai jis din we met bass space de dena after date month nd year pura likhna</h2>
+      <input type="password" id="passwordInput" placeholder="DD MM YYYY">
+      <button id="passwordSubmit">Unlock</button>
+      <p id="passwordError" style="color: red; display: none; margin-top: 10px;">Incorrect password. Try again! 🚫</p>
+    </div>
+  </div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="music.mp3" type="audio/mp3" />
+  </audio>
+
+  <div id="start-screen" style="display:none;"> <button id="startBtn">Start the Letter 💌</button>
+  </div>
+
+  <div id="main-content" style="display:none;">
+    <h1 class="heading"><span id="anniversary-heading" class="outlined-text">Happy 3rd Anniversary My Love ❤️</span></h1>
+
+    <div id="anniversary-message-section" style="display:none;">
+      <p class="type-text" data-text="Three years since that one random “😂” turned into the most meaningful part of my life 💖.
+      Since the day you replied everything changed ✨.
+I didn’t just find someone to talk to 🥺,
+I found you 🥰.
+      And you? 😳
+You’re the most incredible human being I’ve ever known 😍.
+You’re kind in ways the world doesn’t deserve, strong in ways you don’t even realize 💪.
+      You carry so much in your heart and still manage to give love to everyone around you 💖.
+You make people feel seen, heard, safe, especially me 🥺.
+You’re beautiful not just in the way you look, but in the way your soul glows 🌷.
+You laugh in a way that makes everything feel lighter 😋.
+      You care with so much depth even when you pretend you don’t 🤭.
+You light up my dark days without even trying ✨.
+You’ve held me on my weak days, understood me when I couldn’t even explain myself 😭,
+And loved me in ways I never knew I needed. 🥰
+      You are not ordinary 🪐.
+You are magic in your words, your presence, your heart ❤️.
+And every single day I thank the universe that our paths crossed, that I sent that emoji, and that you replied 💌.
+      So today, on the day we unknowingly started forever, I just want you to know:
+You’re amazing! You’re irreplaceable!
+And I’m endlessly proud to call you mine 🤤.
+      Happy 3rd Anniversary of Us! 💞
+Here’s to many more years of choosing each other, growing together, and falling deeper in love 💋.
+      Forever yours. 🥺"></p>
+      <button id="show-photos-btn" class="reveal-button" style="display:none;">Want to see more, Vish? Press here! 😉</button>
+    </div>
+
+    <div id="her-photo-section" style="display:none;">
+      <h2><span class="type-text" data-text="Her Smile 😍"></span></h2>
+      <img src="her.jpg" class="photo" alt="Her Photo">
+      <p class="type-text" data-text="Cuter than the stars 🌟 I PROMISE TO PROTECT THIS SMILE AT ANY COST! I'LL DO NO MATTER WHAT, BUT I'LL NEVER LET THAT FADE AWAY. NEVER.... 🥺"></p>
+      <button id="show-my-photo-btn" class="reveal-button" style="display:none;">And me? 😂</button>
+    </div>
+
+    <div id="my-photo-section" style="display:none;">
+      <h2><span class="type-text" data-text="me lol 👅"></span></h2>
+      <img src="me.jpg" class="photo" alt="My Photo">
+      <p class="type-text" data-text="A random nigga who won jackpot 😂"></p>
+      <button id="show-couple-photo-btn" class="reveal-button" style="display:none;">What about us together? 💖</button>
+    </div>
+
+    <div id="couple-photo-section" style="display:none;">
+      <h2><span class="type-text" data-text="Us Together🤝 lol i look soo asss in this pic nd yoh still look devine ✨"></span></h2>
+      <img src="together.jpg" class="photo" alt="Couple Photo">
+      <p class="type-text" data-text="You’re not just the one I love, you’re the one who stayed, who always chose me even though I’m such a loser, such a guy who hurts you, who says anything without even thinking when mad lol 😭. Such a worthless guy I am, then there’s you, so beautiful, so cutu, so pyaari, so fucking obsessed with hamesha. You choose me even though you’re so much of a goddesssss 💖.
+That’s what makes you different.
+That’s what makes us real.
+We’ve argued, we’ve hurt, we’ve misunderstood — but never gave up 🥰.
+Every time we fight it’s like the universe tests us, only to remind us we’re stronger than the noise between us 💪.
+Every “I’m mad” turns into “I missed you.” 🥺
+Every distance turns into a tighter hug even if it’s virtual. 🫂
+You don’t walk away when things get hard.
+That’s why you’re my comfort zone — You sit with me in the storm even when you’re hurting too 😭.
+That’s why you’re my comfort zone, not because everything is always perfect,
+but because even when it’s messy, I know you’re still my person ❤️."></p>
+      <button id="show-chats-btn" class="reveal-button" style="display:none;">Our chats? Oh nawwww... 🙈</button>
+    </div>
+
+    <div id="chat-screenshots-section" style="display:none;">
+      <h2><span class="type-text" data-text="lol some cutu walein screenshots"></span></h2>
+      <div class="screenshots">
+        <div class="ss-box">
+          <img src="ss1.jpg" />
+          <p class="ss-caption type-text" data-text="Vish gold digger, mujhe toh bada darr lagta isse, Vish being a gold digger guys..... 😂😈"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss2.jpg" />
+          <p class="ss-caption type-text" data-text="Late night talk jisme Vish is telling me she's a molester for me 💬👅"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss3mera.jpg" />
+          <p class="ss-caption type-text" data-text="Ntg, just Vish ka Aaravpaglu banna start hona 🌅😳"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss4.jpg" />
+          <p class="ss-caption type-text" data-text="Ofc future wala lol! Aarav ke liye loyal toh hai 😆💍"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss5.jpg" />
+          <p class="ss-caption type-text" data-text="Nahi toh kya, apka hi hun😎😋"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss6.jpg" />
+          <p class="ss-caption type-text" data-text="Itna hard blush karaya tha mujhe iss text ne! I remember I was with my family 🥺😳"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss7.jpg" />
+          <p class="ss-caption type-text" data-text="Bas Vish ka Batman hun, bas usko hi protect karunga 🧸❤️"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss8.jpg" />
+          <p class="ss-caption type-text" data-text="Oh naww, ye kapde utarne wala kisne add kara yaha? Ab Vish ye sab read karte karte horny ho jayegi aur mere sath phir wahi sab ho jayega 🙈😭"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss9.jpg" />
+          <p class="ss-caption type-text" data-text="Sidhe nudes mangati hai, bhai, darr jata hunn kabhi bhi randomly 😒👅"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss10.jpg" />
+          <p class="ss-caption type-text" data-text="Aww, Vish threatening me to kapde utar 😈"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss11.jpg" />
+          <p class="ss-caption type-text" data-text="Khud toh bhej pehele 😜😳"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss12.jpg" />
+          <p class="ss-caption type-text" data-text="Aww, from 'what's there to laugh at' to 'aap mere ko dik pic bhejo' ☁️😂"></p>
+        </div>
+        <div class="ss-box">
+          <img src="ss13.jpg" />
+          <p class="ss-caption type-text" data-text="Pyaari toh bahut hai, meko bolti if uske paas hota toh bhej deti awwww 💌🥰"></p>
+        </div>
+      </div>
+      <p class="type-text" data-text="It all began with a ‘😂’...
+      Three years ago today, I sent a simple emoji — just a “😂” —
+No grand gesture, no plan, just a random moment… and you, a rude reply from you 😈.
+      “What’s there to laugh at?” 💢
+      That one little question started something I never saw coming ✨.
+Something so big, so real, so beautiful 💖.
+      That tiny spark on Insta became the beginning of the most meaningful connection I’ve ever known.
+      We didn’t meet in person, we didn’t know where it was going, but somehow we just clicked 🔗.
+Every day, every chat, every late-night conversation built something deeper,
+something more honest, more comforting, more 'us' 🥰.
+      From that first moment till now, you’ve become more than just someone I talk to.
+You became my person ❤️.
+The one who understands me when I don’t make sense.
+      The one who makes me smile even through texts 😋.
+The one I think about randomly in the middle of the day 💭.
+The one I miss even after we just talked 🥺.
+This isn’t just the anniversary of a message,
+It’s our story, the anniversary of when fate gave me someone irreplaceable 🪐.
+It’s the day a stranger started becoming my everything ❣️.
+      Three years of laughter, of growth, of loving and learning, of being there for each other in ways only we can understand 💋.
+You’ve seen the best and worst of me, and you’ve stayed.
+You chose me. You kept choosing me.
+      And I want you to know…
+I’d go back and send that same emoji again a million times,
+If it means I’d find you at the end of it 🤤.
+So here’s to the “😂” that started it all,
+To the “What’s there to laugh at?” that made my heart smile 😊.
+      To three years of something rare and real.
+To you, and everything we’ve become.
+Happy third year anniversary to my baeee!!! 💖
+Happy 3rd Anniversary of the Day We Met My baeee.... 🥰
+      Thank you for replying.
+      Thank you for staying.
+      Thank you for becoming home. 🏡"></p>
+      <button id="show-surprise-btn" class="reveal-button" style="display:none;">A hidden surprise just for you! 🎁</button>
+    </div>
+
+    <div id="surprise-section" style="display:none;">
+      <div id="surprise" class="surprise-animation">
+        <h2>💝 Hidden Surprise 💝</h2>
+        <button onclick="revealSurprise()">Tap to Reveal</button>
+        <div id="hidden-message" style="display:none;">
+          <p class="type-text" data-text="You’ll forever be my always 💍.
+One day, I’ll marry you for real! I’ll be rich, so rich and successful enough that your dad can’t reject me. Phir we will marry, and I’ll cream pie my pretty wife Vish daily and every day until then, I’ll keep loving you more..... 👅"></p>
+          <img src="surprise-pic1.jpg" class="surprise-image" alt="Surprise Image 1">
+          <p class="ss-caption type-text" data-text="feel free to use it anytime you want cutu hehehe😳."></p>
+          <img src="surprise-pic2.jpg" class="surprise-image" alt="Surprise Image 2">
+          <p class="ss-caption type-text" data-text="i really am i mean hone wali gf or whatever yarr dont be mad on me cuz of that kabhi toh banegi na so abhi ke liye read it my girl 🥰😭"></p>
+        </div>
+      </div>
+      <button id="show-ending-btn" class="reveal-button" style="display:none;">How was all that? Did you like that?? Well now there's ntg, close it, don't press for more, it will just waste your time, it's just me being ykyk so ignore it, Vishh!!</button>
+    </div>
+
+    <div id="final-images-section" style="display:none;">
+        <h2><span class="type-text" data-text="Lol so tune click kr hi dia meri baat man ni toh hai ni thike kr le time waste😌"></span></h2>
+        <div class="final-gallery">
+            <div class="final-img-box">
+                <img src="final-pic1.jpg" class="photo" alt="Final Image 1">
+                <p class="ss-caption type-text" data-text="That's me when i'm with you lol so happy ✨"></p>
+            </div>
+            <div class="final-img-box">
+                <img src="final-pic2.jpg" class="photo" alt="Final Image 2">
+                <p class="ss-caption type-text" data-text="And here's me again when no Vish🥰"></p>
+            </div>
+            <div class="final-img-box">
+                <img src="final-pic3.jpg" class="photo" alt="Final Image 3">
+                <p class="ss-caption type-text" data-text="Us when we're tg lol see how happy we are looking cute dancing tg 💖"></p>
+            </div>
+            <div class="final-img-box">
+                <img src="final-pic4.jpg" class="photo" alt="Final Image 4">
+                <p class="ss-caption type-text" data-text="Me when meri aurat 💋 vs me when no vish "></p>
+            </div>
+            <div class="final-img-box">
+                <img src="final-pic5.jpg" class="photo" alt="Final Image 5">
+                <p class="ss-caption type-text" data-text="roz hi aate hai aese sapne really wanna get railed by you 🤤"></p>
+            </div>
+            <div class="final-img-box">
+                <img src="final-pic6.jpg" class="photo" alt="Final Image 6">
+                <p class="ss-caption type-text" data-text="Lol there's aint any no ka option cuz ik you do both hehehe umm... maybe🥺"></p>
+            </div>
+            <div class="final-img-box">
+                <img src="final-pic7.jpg" class="photo" alt="Final Image 7">
+                <p class="ss-caption type-text" data-text="For my cutu putu cupcake pookie princess whos lil badmosh 😈"></p>
+            </div>
+            <div class="final-img-box">
+                <img src="final-pic8.jpg" class="photo" alt="Final Image 8">
+                <p class="ss-caption type-text" data-text="Us being eepy after doing everything we talked in our chats 😭"></p>
+            </div>
+            <div class="final-img-box">
+                <img src="final-pic9.jpg" class="photo" alt="Final Image 9">
+                <p class="ss-caption type-text" data-text="I like you smmmmmm ❣️ Please stay with me hamesha i want you in my every life "></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="ending-section" style="display:none;">
+      <h2><span class="type-text" data-text="Forever Yours,"></span></h2>
+      <p class="type-text" data-text="— Your Aaravvvvv or should I say, soon to be your hubby lol 💘"></p>
+    </div>
+  </div>
+
+</body>
+</html>
+
